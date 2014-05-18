@@ -258,9 +258,6 @@ void CApplication::OnHelpDonate()
 //////////////////////////////////////////////////////////////////////////////
 BOOL CApplication::ParseCommandLine()
 {
-	//ADL This is broken; don't know why.  Disable for now.
-	return TRUE;
-
 	// parse command line
 	CCmdLineParser lkCmdLineParser(GetCommandLine());
 
@@ -276,7 +273,7 @@ BOOL CApplication::ParseCommandLine()
 	if ( lkCmdLineParser.HasVal(_T("folder")) )
 		return ParseCommandLineForFolderAction(lkCmdLineParser);
 
-	return FALSE;
+	return TRUE;
 }
 
 //////////////////////////////////////////////////////////////////////////////
