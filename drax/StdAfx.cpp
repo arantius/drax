@@ -84,6 +84,9 @@ int AfxStringToUtf8(const CString &psString, char *&ppszString)
 //////////////////////////////////////////////////////////////////////////////
 BOOL AfxIsDonated()
 {
+	//ADL Just get rid of donation nags?
+	return TRUE;
+
 	// get donation trials
 	int liDonationTrials = AfxGetApp()->GetProfileInt(_T("Settings"), _T("DonationTrials"), 0);
 
