@@ -136,7 +136,8 @@ void CApplication::OnFileOptimize()
 	lsFilterName += _T("|*.") + lsFilterExt + _T("||"); // create filter
 
 	// select file
-	CFileDialog ldlgFile(FALSE, lsFilterExt, NULL, 4|2 , lsFilterName, GetMainWnd());
+	CFileDialog ldlgFile(FALSE, lsFilterExt, lpkDoc->GetPathName(), 
+		OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, lsFilterName, GetMainWnd());
 	if ( IDOK != ldlgFile.DoModal() )
 		return;
 
