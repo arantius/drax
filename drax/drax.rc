@@ -531,6 +531,7 @@ BEGIN
         MENUITEM "Export Chapters...",          ID_FILE_EXPORT_CHAPTERS
         MENUITEM SEPARATOR
         MENUITEM "Optimize...",                 ID_FILE_OPTIMIZE
+        MENUITEM "Optimize In Place",           ID_FILE_OPTIMIZEINPLACE
         MENUITEM SEPARATOR
         MENUITEM "E&xit\tAlt+F4",               ID_APP_EXIT
     END
@@ -626,6 +627,7 @@ BEGIN
     ID_FILE_OPTIMIZE        "Optimize the layout of an M4V file.\nOptimize"
     ID_FILE_IMPORT_CHAPTERS "Import chapters from a text file."
     ID_FILE_EXPORT_CHAPTERS "Export chapters to a text file."
+    ID_FILE_OPTIMIZEINPLACE "Optimize the layout of an M4V file, operating in place.\nOptimize"
 END
 
 #endif    // English (United States) resources
